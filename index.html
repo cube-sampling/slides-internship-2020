@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Opensource : slides master</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/white.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="diaporama/agate.css" />
+
+    <!-- Style des diapos -->
+    <link rel="stylesheet" href="diaporama/slides.css" />
+    <link rel="stylesheet" href="diaporama/icons/icons.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides icon-color">
+        <section class="main-title">
+          <h1>Soutenance de master</h1>
+          <p>
+            <small> OpenSource et Modularité à l’INSEE : Exemple avec l’implémentation d’une méthode d’échantillonage.</small>
+          </p>
+          <table>
+            <tr>
+              <td>
+                <a href="https://www.univ-rennes1.fr/">
+                  <img src="images/rennes-no-bg.png" style="width: 100px;" />
+                </a>
+              </td>
+              <td>
+                <a href="http://ensai.fr/en/">
+                  <img src="http://ensai.fr/wp-content/uploads/2019/05/Ensai-logo-300x282.png" style="width: 107px;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.insee.fr/en/accueil">
+                  <img
+                    src="http://ensai.fr/wp-content/uploads/2019/05/Logo_Insee.svg_-260x300.png"
+                    style="width: 84px"
+                  />
+                </a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="right small">
+            <a
+              href="?print-pdf#/"
+              class="icon print"
+              title="Imprimer avec Chrome"
+            ></a>
+          </p>
+
+          <p></p>
+        </section>
+
+        <section
+          data-markdown="diaporama/chapitre-01.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        >
+       </section>
+
+        <section
+          data-markdown="diaporama/chapitre-02.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section
+          data-markdown="diaporama/chapitre-03.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+       
+        <section
+          data-markdown="diaporama/chapitre-04.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section
+          data-markdown="diaporama/chapitre-04-exo.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section
+        data-markdown="diaporama/chapitre-04-recapitulatif.md"
+        data-separator="^---+$"
+        data-separator-vertical="^%%%+$"
+        data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section
+          data-markdown="diaporama/chapitre-05.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section
+          data-markdown="diaporama/chapitre-06.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section
+          data-markdown="diaporama/chapitre-07.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section
+          data-markdown="diaporama/chapitre-08.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section class="main-title">
+          <img src="images/logo-git.png" style="width: 200px" />
+          <h2>Merci de votre attention</h2>
+          <h3>
+            <small
+              ><a href="mailto:melinee.treppoz-salomon@insee.fr?Subject=[Aide Git]"
+                >melinee.treppoz-salomon@insee.fr</a></small
+            >
+            <br/>
+            <small
+              ><a href="mailto:antoine.brunetti@insee.fr?Subject=[Aide Git]"
+                >antoine.brunetti@insee.fr</a
+              ></small
+            >
+          </h3>
+        </section>
+
+        <section
+        data-markdown="diaporama/bonus-03.md"
+        data-separator="^---+$"
+        data-separator-vertical="^%%%+$"
+        data-separator-vertical="^%%%+$"
+        ></section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/zoom-js/zoom.js", async: true },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+      Reveal.configure({
+        // Slide number formatting can be configured using these variables:
+        // "h.v": horizontal . vertical slide number (default)
+        // "h/v": horizontal / vertical slide number
+        // "c": flattened slide number
+        // "c/t": flattened slide number / total slides
+        slideNumber: "c/t",
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+
+        // Transition style
+        transition: "slide", // none/fade/slide/convex/concave/zoom
+
+        // Transition speed
+        transitionSpeed: "default", // default/fast/slow
+
+        // Transition style for full page slide backgrounds
+        backgroundTransition: "fade", // none/fade/slide/convex/concave/zoom
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: true
+      });
+    </script>
+  </body>
+</html>
