@@ -1,4 +1,4 @@
-<!-- .slide: data-background-image="images/Literature.svg" data-background-size="800px" class="chapter" -->
+<!-- .slide: data-background-image="images/Literature.svg" data-background-size="750px" class="chapter" -->
 
 ## Open source : concepts
 

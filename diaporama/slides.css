@@ -78,6 +78,10 @@
   filter: opacity(70%);
 }
 
+.reveal .slides code:hover {
+  filter: opacity(70%);
+}
+
 .reveal .slides {
   font-size: 30px;
 }
@@ -87,11 +91,11 @@
 }
 
 .reveal .slide.slide-background.present {
-  opacity: 0.02;
+  opacity: 0.05;
 }
 
 .reveal .tp.slide-background.present {
-  opacity: 0.02;
+  opacity: 0.05;
 }
 
 .reveal .exercice.slide-background.present {

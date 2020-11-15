@@ -1,4 +1,4 @@
-<!-- .slide: data-background-image="images/risk.svg" data-background-size="1000px" class="chapter" -->
+<!-- .slide: data-background-image="images/risk.svg" data-background-size="700px" class="chapter" -->
 
 ## Risques et avantages liés à l'open source
 
@@ -42,8 +42,14 @@ La fonction publique utilise beaucoup de solutions open source, mais assure un s
 
 - Contribution externes au projet interne
 - Projet plus accessible et donc plus prône aux erreurs 
-- 
+- Réutilisation du code interne dans d'autres projets, découpage en sous projets
 
+Note:
+
+
+Réutilisation du code interne dans d'autres projets, découpage en sous projets : 
+Construction en microservice, adhérence actuelle aux données métier, schéma dynamique
+Découpage application en partie tirage, définition, vtl ... Réutilisabilité
 %%%
 
 
@@ -53,14 +59,3 @@ La fonction publique utilise beaucoup de solutions open source, mais assure un s
 - Présentation des algorithmes permettant la réalisation des chiffres
 - Utilisation de solutions déjà maintenues et standards
 
-
-%%%
-
-<!-- .slide: data-background-image="images/risk.svg" data-background-size="600px" class="slide" -->
-
-
-
-### Pourquoi passer les projets à l'open source ? 
-- C'est une consigne légale 
-- 
-- 

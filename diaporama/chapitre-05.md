@@ -1,12 +1,12 @@
-<!-- .slide: data-background-image="images/logo.svg" data-background-size="600px" class="chapter" -->
+<!-- .slide: data-background-image="images/cube.svg" data-background-size="600px" class="chapter" -->
 
-## Conflits et fusion
+## Application à un service de tirage
 
 %%%
 
-<!-- .slide: data-background-image="images/logo.svg" data-background-size="600px" class="slide" -->
+<!-- .slide: data-background-image="images/cube.svg" data-background-size="600px" class="slide" -->
 
-### La fusion : introduction
+### Description du besoin
 
 Les fusions se produisent dans trois cas :
 
@@ -27,9 +27,9 @@ Les techniques présentées ici sont valables dans les trois cas
 
 %%%
 
-<!-- .slide: data-background-image="images/logo.svg" data-background-size="600px" class="slide" -->
+<!-- .slide: data-background-image="images/cube.svg" data-background-size="600px" class="slide" -->
 
-### Généralités
+### Utilisation d'un existant open source
 
 La fusion est toujours locale
 
@@ -51,7 +51,7 @@ Voir bonus dans travailler en local
 
 <!-- .slide: data-background-image="images/logo.svg" data-background-size="600px" class="slide" -->
 
-### Résoudre un conflit
+### Réalisation d'un projet open source
 
 Lors de la fusion on est averti qu’il y a eu des conflits :
 
