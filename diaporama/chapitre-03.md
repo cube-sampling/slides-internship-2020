@@ -1,24 +1,36 @@
 <!-- .slide: data-background-image="images/submarine.svg" data-background-size="600px" class="chapter" -->
 
-## Open source et administration
+## Démarches pour un projet public
 
 %%%
 
 <!-- .slide: data-background-image="images/submarine.svg" data-background-size="600px" class="slide" -->
+### Enjeux pour un projet public
+L'open source consiste à l'ouverture du code pour une exposition externe. Les enjeux principaux sont donc : 
+- Suppression de l'adhérence aux environnements (composants insee / non insee)
+- Supression de toute donnée sensible de ces projets
+- Génération de jeux de tests pour des environnements ouverts
+- Documentation du projet sur les problématiques métier, comment contribuer
 
-### Créer un dépot local
-- Le dépot local se situe directement sous .git à la racine de votre projet, c'est lui qui contient toutes les informations permettant à git de fonctionner correctement
-```
-cd .git
-ls
-```
+Cela est entré dans la loi pour le devenir des applications et données administratives : <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033202746/">Loi pour une république numérique (2016)</a>
+
+%%%
+
+<!-- .slide: data-background-image="images/submarine.svg" data-background-size="600px" class="slide" -->
+### L'environnement
+Au niveau de l'architecture, il est important de décorreler construction de livrables et environnements. Au niveau global, il s'agit de pouvoir intégrer dans des environnements variés, un même livrable.
+- Cela induit des travaux sur la modularité du code, un code s'abstrayant de son environnement d'execution
 - Il se construit lors de l'initialisation d'un projet git, en prenant tous les fichiers dans l'arborescence fille pour commencer le versionning
 ```
 git init .
 ```
+
+Note:
+Modularité : En fait il y a les livrables compilés du code, puis la dynamique d'état 
+Cela peut s'avérer compliqué dans le cas de projet legacy stateful.  => Car adhérence a environnement de déploiement / vie de la vm
 %%%
 <!-- .slide: data-background-image="images/submarine.svg" data-background-size="600px" class="slide" -->
-### Créer un dépot local à partir d'un dépot distant
+### Suppression des données sensibles
 
 On repart rarement de rien. Souvent, on repart d'un travail de collègue :
 
@@ -35,78 +47,26 @@ Vous venez de créer un dépot local avec l'ensemble de l'histoire du dépot dis
 
 %%%
 <!-- .slide: data-background-image="images/submarine.svg" data-background-size="600px" class="slide" -->
+### Géneration des données 
 
-### Création d'une version
+On repart rarement de rien. Souvent, on repart d'un travail de collègue :
 
-- Pour pouvoir ajouter des fichiers à une version il faut donc indiquer à git qu'il peut les référencer pour la prochaine version (en les plaçant dans son index)
-```
-git add fichier
-git add .
-```
-- Pour savoir à quel état sont vos fichiers, vous pouvez également le vérifier : 
-```
-git status
-```
-- Un commit est une version d'une application à un état sauvegardé dans le dépot.
-- Lorsque l'ensemble des fichiers ajoutés est cohérent pour la réalisation d'une version, on réalise donc une nouvelle version en créant un commit
-```
-git commit [options]
-```
+~~~~
+git clone <url en https>
+~~~~
+exemple avec ce code de formation
+
+~~~
+git clone https://git.lab.sspcloud.fr/formation/git/formation-git-orleans-oct-2020.git
+~~~
+
+Vous venez de créer un dépot local avec l'ensemble de l'histoire du dépot distant
 
 %%%
 <!-- .slide: data-background-image="images/submarine.svg" data-background-size="600px" class="slide" -->
-
-### Récapitulatif ajout de fichier
-
-<img src="https://blog.axosoft.com/wp-content/uploads/2019/11/wd-sd-commit.gif" alt="travail-staging-commit">
-
-Note:
-Source : https://blog.axosoft.com/learn-git-commit/
-Vous pouvez donc voir qu'un fichier de votre dépot "project", passe par une étape de staging avant d'être pérennisé par un commit
-
-%%%
-<!-- .slide: data-background-image="images/submarine.svg" data-background-size="600px" class="slide" -->
-
-### Création de branche
-- Permet de créer un sous espace dédié à une version de l'application ex: nouvelle fonctionnalité, application mise en recette, preview
-```
-git branch nouvelle-branche
-```
-- Vous pouvez naviguer entre différentes versions de l'application par un checkout
-```
-git checkout nouvelle-branche
-```
-- N'a aucun coût de stockage, donc il ne faut vraiment pas hésiter à en faire.
-- Pour voir vos branches
-```
-git branch
-```
- - Pour voir toutes vos branches
-```
-git branch --all
-```
-%%%
-
-<!-- .slide: data-background-image="images/submarine.svg" data-background-size="600px" class="slide" -->
-
-### Exercices
-
-<a href="exercices/exercice-git-local.html" target="_blank">C'est ici</a>
-
-%%%
-
-<!-- .slide: data-background-image="images/submarine.svg" data-background-size="600px" class="slide" -->
-
-### Gitignore : limiter le versionning
-- Seul le code compte ! (Les data n'ont pas à être versionnées via git)
-- Les fichiers non textuels sont lourds à versionner (attention aux faux fichiers texte .odt)
-- Vous ne voulez nécessairement pas versionner tous les fichiers d'un projet, pour cela, vous pouvez définir les fichiers que vous ne voulez pas versionner à l'aide d'expressions régulières (regex) à l'intérieur d'un fichier .gitignore, ce que vous ne voulez pas versionner dans votre application
-```
-echo toto > toto.tmp
-echo *.tmp >> .gitignore
-git status
-```
-- Vous pouvez également définir cela au niveau de votre configuration globale git, pour par exemple, éviter d'ajouter par erreur les properties ou éviter de polluer un dépot avec votre configuration eclipse / intelliJ
-Note:
-1) exemple avec les fichiers .tmp
-2) global gitignore, c'est vraiment pratique, lisez la doc
+### Documentation
+La langue par défaut dans le monde open source est l'anglais, le code source doit donc être documenté en anglais. <br/>
+Cela s'inscrit donc sur plusieurs projets pour l'ouverture du code :
+- Documentation détaillée, en anglais pour construire un environnement de travail
+- Code source également construit en langue anglaise
+- Internationalisation des interactifs (i18n)

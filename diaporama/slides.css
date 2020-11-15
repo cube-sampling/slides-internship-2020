@@ -83,15 +83,15 @@
 }
 
 .reveal .chapter.slide-background.present {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .reveal .slide.slide-background.present {
-  opacity: 0.2;
+  opacity: 0.02;
 }
 
 .reveal .tp.slide-background.present {
-  opacity: 0.2;
+  opacity: 0.02;
 }
 
 .reveal .exercice.slide-background.present {

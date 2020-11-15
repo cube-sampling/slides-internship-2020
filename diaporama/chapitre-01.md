@@ -1,10 +1,10 @@
-<!-- .slide: data-background-image="images/git-book.png" data-background-size="600px" class="chapter" -->
+<!-- .slide: data-background-image="images/Literature.svg" data-background-size="800px" class="chapter" -->
 
 ## Open source : concepts
 
 %%%
 
-<!-- .slide: data-background-image="images/git-book.png" data-background-size="600px" class="slide" -->
+<!-- .slide: data-background-image="images/Literature.svg" data-background-size="600px" class="slide" -->
 
 <h3><a href="https://opensource.org/osd" style=color:inherit target=_blank> Définition</a></h3>
 
@@ -30,8 +30,7 @@ Quels sont les risques qui interviennent avec l'ouverture d'un code source ?
 %%%
 
 
-<!-- .slide: data-background-image="images/git-book.png" data-background-size="600px" class="slide" -->
-
+<!-- .slide: data-background-image="images/Literature.svg" data-background-size="600px" class="slide" -->
 ### Les licenses 
 Il est donc nécessaire de définir un tel contrat pour une application. <br/> 
 Il se trouve de manière classique dans un projet sous le nom <a href="https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository" target=_blank>LICENSE</a>
@@ -56,7 +55,7 @@ Quels sont les risques qui interviennent avec l'ouverture d'un code source ?
 
 
 
-<!-- .slide: data-background-image="images/git-book.png" data-background-size="600px" class="slide" -->
+<!-- .slide: data-background-image="images/Literature.svg" data-background-size="600px" class="slide" -->
 
 ### Contribution
 
