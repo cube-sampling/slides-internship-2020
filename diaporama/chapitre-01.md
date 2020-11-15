@@ -8,7 +8,7 @@
 
 <h3><a href="https://opensource.org/osd" style=color:inherit target=_blank> Définition</a></h3>
 
-Est dit open source un logiciel:
+Est dit open source un logiciel :
 - à libre redistribution <!-- .element: class="fragment" -->
 - avec un code source accessible <!-- .element: class="fragment" -->
 - possédant une définition du devenir du code partagé <!-- .element: class="fragment" -->
@@ -34,11 +34,10 @@ Quels sont les risques qui interviennent avec l'ouverture d'un code source ?
 ### Les licenses 
 Il est donc nécessaire de définir un tel contrat pour une application. <br/> 
 Il se trouve de manière classique dans un projet sous le nom <a href="https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository" target=_blank>LICENSE</a>
+
 On retrouve ici différents concepts: 
 - rapport projet parent/fils <!-- .element: class="fragment" -->
 - quel partage pour le code ?  <!-- .element: class="fragment" -->
-- rapports projets parent/fils <!-- .element: class="fragment" -->
-
 Note:
 
 Rapport projet parent/fils

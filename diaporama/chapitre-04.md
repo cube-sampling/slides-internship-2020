@@ -20,17 +20,22 @@ L'enjeu ici était l'ouverture du code pour la réalisation d'un batch en extern
 <table>
             <tr>
               <td>
-                <a href="https://postgresql-anonymizer.readthedocs.io/en/stable/">
+                <a href="https://postgresql-anonymizer.readthedocs.io/en/stable/" target="_blank">
                   <img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/7709206/carre.png?width=64" style="width: 70px;" />
                 </a>
               </td>
               <td>
-                <a href="https://github.com/benkeen/generatedata">
+                <a href="https://www.json-generator.com/" target="_blank">
+                  <img src="images/js.png" style="width: 200px;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://github.com/benkeen/generatedata" target="_blank">
                   <img src="images/generatedData.png" style="width: 120px;" />
                 </a>
               </td>
              <td>
-                <a href="https://www.techonthenet.com/postgresql/functions/random.php">
+                <a href="https://www.techonthenet.com/postgresql/functions/random.php" target="_blank">
                   <img src="https://www.postgresql.org/media/img/about/press/elephant.png" style="width: 80px;" />
                 </a>
               </td>

@@ -1,4 +1,4 @@
-# formation_git_orleans
+# Slides internship open source
 
-Les slides [ici](http://formation.pages.lab.sspcloud.fr/git/formation-git-orleans-oct-2020/#/)
+Slides are [here](https://cube-sampling.github.io/slides-internship-2020/#/)
 
