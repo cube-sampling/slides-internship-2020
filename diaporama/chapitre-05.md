@@ -12,7 +12,7 @@ Pour l'élaboration d'échantillon d'unités primaires,
 l'INSEE nécessite, afin d'améliorer la précision des estimateurs d'Horvitz Thompson des totaux, l'utilisation d'une méthode de tirage équilibrée.
 
 Note:
-Pour l'élaboration d'échantillon d'unités primaires, dans le cadre de plan de sondages spécifiques à certaines enquêtes ménages, <br/>
+Pour l'élaboration d'échantillon d'unités primaires pour le tirage de premier degré , dans le cadre de plan de sondages spécifiques à certaines enquêtes ménages, <br/>
 l'INSEE nécessite, afin d'améliorer la précision des estimateurs d'Horvitz Thompson des totaux, l'utilisation d'une méthode de tirage équilibrée.
 L'algorithme du cube est en cela un algorithme spécifié pour la réalisation d'un tel échantillon.
 
@@ -45,6 +45,43 @@ Troisième idée, intégration d'un matériel existant de jars open sources réa
 
 <!-- .slide: data-background-image="images/cube.svg" data-background-size="500px" class="slide" -->
 
-### Réalisation d'un projet open source
+### Accès au projet
 
+Utilisation de modes de packaging standards
+<table>
+    <tr>
+      <td>
+        <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/jar/jarGuide.html" target="_blank">
+          <img src="images/pngegg.png" style="width: 100px;" />
+        </a>
+      </td>
+            <td>
+        <a href="https://www.docker.com/" target="_blank">
+          <img src="images/docker-image.png" style="width: 130px;" />
+        </a>
+      </td>
+      <td>
+        <a href="https://helm.sh/" target="_blank">
+          <img src="https://helm.sh/img/helm.svg" style="width: 90px;" />
+        </a>
+      </td>
+    </tr>
+</table>
+
+Note:
+
+L'objectif étant de présenter une librairie et de communiquer par le biais d'une solution intégrée clé en main démo, permettant aux utilisateurs de mieux prendre en main l'applicatif et ainsi augmenter les chances de contribuer.
+%%%
+
+<!-- .slide: data-background-image="images/cube.svg" data-background-size="500px" class="slide" -->
+### Infrastructure projet
+
+2 types de projets : projet librairies, projets d'intégration. 
+
+Intégrés dans une forge logicielle.
+
+
+Note:
+
+L'objectif étant de présenter une librairie et de communiquer par le biais d'une solution intégrée clé en main démo, permettant aux utilisateurs de mieux prendre en main l'applicatif et ainsi augmenter les chances de contribuer.
 

@@ -1,7 +1,9 @@
 <!-- .slide: data-background-image="images/literature.svg" data-background-size="750px" class="chapter" -->
 
 ## Open source : concepts
-
+Note:
+Bonjour,
+Abdou Diaw et moi même, au SNDIO.
 %%%
 
 <!-- .slide: data-background-image="images/literature.svg" data-background-size="600px" class="slide" -->
@@ -31,9 +33,9 @@ Quels sont les risques qui interviennent avec l'ouverture d'un code source ?
 
 
 <!-- .slide: data-background-image="images/literature.svg" data-background-size="600px" class="slide" -->
-### Les licenses 
+### Les licences
 Il est donc nécessaire de définir un tel contrat pour une application. <br/> 
-Il se trouve de manière classique dans un projet sous le nom <a href="https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository" target=_blank>LICENSE</a>
+Il se trouve de manière classique dans un projet dans le fichier <a href="https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository" target=_blank>LICENSE</a>
 
 On retrouve ici différents concepts: 
 - rapport projet parent/fils <!-- .element: class="fragment" -->
@@ -44,6 +46,8 @@ Rapport projet parent/fils
 - La question est de savoir quels sont les conditions du fils d'un projet opensource, doit il être opensource ? Peut il être commercialisable ? La license doit elle être la même pour celui ci ? 
 
 Le code est il accessible a tous, peut on créer des solutions basées sur ce code et les revendre ? 
+Par défaut il est sous license copyright, interdit d'accès et d'utilisation.
+Sinon : 
 - Tout est possible.
 
 Quels sont les risques qui interviennent avec l'ouverture d'un code source ? 
@@ -59,6 +63,7 @@ Quels sont les risques qui interviennent avec l'ouverture d'un code source ?
 ### Contribution
 
 Une documentation de l'application propre 
+
 Un fonctionnement propre, pour le versionning et la contribution : le <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow" target=_blank>Gitflow</a> et les pull requests.
 
 Un fichier d'explication pour la contribution, le <a href="https://gist.github.com/PurpleBooth/b24679402957c63ec426#file-good-contributing-md-template-md" target=_blank>CONTRIBUTING.md</a>

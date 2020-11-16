@@ -17,6 +17,21 @@ L'enjeu ici était l'ouverture du code pour la réalisation d'un batch en extern
 - Anonymisation des données : données réelles dans les jeux de test
 - Génération de jeux de tests pour des environnements ouverts
 
+Note:
+Le premier permet le masquage :
+Solution open source pour l'accès aux données anonymisées dans un cluster interne.
+PB : cluster externe, les données ne nous appartiennent plus et donc risque.
+
+Second: 
+generatedata :
+Solution Open source de génération de données mysql intégrable via docker et helm.
+PB : solution opensource mais pas encore trop maintenue, pas de chart officiel et du coup intégration maison..
+
+Troisième:
+Solution finalement retenue
+Intégration en local, génération par script pour la simplicité et les besoins liés a l'urgence.
+
+
 <table>
             <tr>
               <td>
@@ -41,20 +56,6 @@ L'enjeu ici était l'ouverture du code pour la réalisation d'un batch en extern
               </td>
             </tr>
 </table>
-
-Note:
-Le premier permet le masquage :
-Solution open source pour l'accès aux données anonymisées dans un cluster interne.
-PB : cluster externe, les données ne nous appartiennent plus et donc risque.
-
-Second: 
-generatedata :
-Solution Open source de génération de données mysql intégrable via docker et helm.
-PB : solution opensource mais pas encore trop maintenue, pas de chart officiel et du coup intégration maison..
-
-Troisième:
-Solution finalement retenue
-Intégration en local, génération par script pour la simplicité et les besoins liés a l'urgence.
 
 Bilan: 
 Il y a un réel besoin de développeur de ce côté.
@@ -139,4 +140,5 @@ et de versionner dans le code source, la base de données. Ainsi peut importe l'
 A l'origine, le dépôt de code Nautile était également utilisé pour de la documentation et du stockage de données. Ainsi, pour sortir le code, un travail de <a href="https://rtyley.github.io/bfg-repo-cleaner/" target="_blank">nettoyage</a> a été réalisé sur le dépot git.
 
 
-
+Note:
+Les scripts de suppression sont disponibles <a href="static/suppression-script.md" target="_blank">ici</a>

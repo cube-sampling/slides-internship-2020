@@ -60,14 +60,6 @@
                   />
                 </a>
               </td>
-              <td>
-                <a href="static/Rapport_Master.pdf">
-                  <img
-                    src="images/report.svg"
-                    style="width: 100px"
-                  />
-                </a>
-              </td>
             </tr>
           </table>
 
@@ -81,7 +73,6 @@
 
           <p></p>
         </section>
-
         <section
           data-markdown="diaporama/chapitre-01.md"
           data-separator="^---+$"
@@ -124,24 +115,20 @@
     data-separator-vertical="^%%%+$"
     data-separator-vertical="^%%%+$"
   ></section>
-        <section class="main-title">
-          <h2>Merci de votre attention</h2>
-          <h3>
-            <small
-              ><a href="mailto:antoine.brunetti@insee.fr?Subject=[Open source et projets publics]"
-                >antoine.brunetti@insee.fr</a
-              ></small
-            >
-          </h3>
-        </section>
 
-        <section
+    <section
         data-markdown="diaporama/chapitre-07.md"
         data-separator="^---+$"
         data-separator-vertical="^%%%+$"
         data-separator-vertical="^%%%+$"
       ></section>
 
+      <section
+      data-markdown="diaporama/chapitre-08.md"
+      data-separator="^---+$"
+      data-separator-vertical="^%%%+$"
+      data-separator-vertical="^%%%+$"
+    ></section>
       </div>
     </div>
 
@@ -154,6 +141,7 @@
           { src: "plugin/markdown/marked.js" },
           { src: "plugin/markdown/markdown.js" },
           { src: "plugin/zoom-js/zoom.js", async: true },
+          { src: 'plugin/notes/notes.js', async: true },
           {
             src: "plugin/highlight/highlight.js",
             async: true,
