@@ -81,6 +81,10 @@ Dans le cas de Nautile, il a été question de modulariser la partie web service
 
 Sortie de la partie adhérente du code dans un module a part: <br/>
 nautile-client, disponible dans l'environnement cible par le scope provided
+
+
+Note:
+Illustration niveau maven
 %%%
 <!-- .slide: data-background-image="images/nautilus.svg" data-background-size="600px" class="slide" -->
 ### Modules INSEE et injection de dépendances (Spring boot)
@@ -105,6 +109,9 @@ public void setBatchClient(BatchClient batchClient){
 ```
 
 </a>
+
+Note:
+Illustration spring boot : inversion de contrôle
 %%%
 
 <!-- .slide: data-background-image="images/nautilus.svg" data-background-size="600px" class="slide" -->
@@ -133,6 +140,8 @@ Intégration d'un outil de versionning de base de données dans le code source
 Note:
 Afin d'abstraire la version de l'application et la version des données, il a été décidé de gérer un modèle dynamique 
 et de versionner dans le code source, la base de données. Ainsi peut importe l'environnement, la base étant adhérente au code.
+Ainsi cela réduit la place de l'environnement dans le déploiement, la partie versionning de base n'étant plus adhérente a l'environnement lui même. 
+=> Montées de versions assurées.
 %%%
 
 <!-- .slide: data-background-image="images/nautilus.svg" data-background-size="600px" class="slide" -->

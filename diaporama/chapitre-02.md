@@ -1,7 +1,8 @@
 <!-- .slide: data-background-image="images/risk.svg" data-background-size="700px" class="chapter" -->
 
 ## Risques et avantages liés à l'open source
-
+Note:
+Etude des risques et des avantages du passage a l'open source
 %%%
 
 
@@ -16,10 +17,10 @@
 Note:
 Code exposé : 
 - injection sql et accès aux informations sur les dépendances (failles de sécurité)
-
+<br/>
 Adhérences fortes: 
 - mots de passes et liens. Problématiques de gestion de version.
-
+<br/>
 Gestion de version : 
 - Reverse engineering du code source
 voir https://medium.com/swlh/hacking-git-directories-e0e60fa79a36
@@ -37,8 +38,12 @@ voir https://medium.com/swlh/hacking-git-directories-e0e60fa79a36
 Note:
 Problématiques compétences développeur: 
 Le travail OS n'est pas généralisé a l'insee, il faut donc envisager la conduite du changement de ce niveau là puisse qu'il y a tout une gestion de projet associée, des risques à connaître.  
+<br/>
 Problématique contribution fonction publique : 
 La fonction publique utilise beaucoup de solutions open source, mais assure un suivi dans sa gestion des ressources du parc des développeurs. De ce fait, la contribution opensource est imputée à des organismes internes en quête de ressource et donc, elle n'est par nature pas encouragée par les responsables hiérarchiques métiers.
+<br/>
+- Problématiques juridiques : droit des données
+Exposition des données à des serveurs externes, risques pour la structure.
 %%%
 
 

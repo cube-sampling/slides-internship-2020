@@ -1,7 +1,8 @@
 <!-- .slide: data-background-image="images/cube.svg" data-background-size="600px" class="chapter" -->
 
 ## Application à un service de tirage
-
+Note:
+Enfin nous allons étudier un cas plus particulier de nouveau projet pour le stage, cela illustre les problématiques d'utilisation et de conception d'application comme ressource open source.
 %%%
 
 <!-- .slide: data-background-image="images/cube.svg" data-background-size="500px" class="slide" -->
@@ -83,5 +84,8 @@ Intégrés dans une forge logicielle.
 
 Note:
 
-L'objectif étant de présenter une librairie et de communiquer par le biais d'une solution intégrée clé en main démo, permettant aux utilisateurs de mieux prendre en main l'applicatif et ainsi augmenter les chances de contribuer.
+Enjeux de packaging différents de communication et de modularité.
+<br/>
+ Un projet d'intégration permettant de rapidement prendre en main la partie modulaire,
+  <br/> le module étant le coeur du fonctionnement applicatif.
 

@@ -2,6 +2,8 @@
 
 ## Démarches pour un projet public
 
+Note:
+L'objectif de cette partie est d'inscrire ces concepts dans le cadre d'un projet d'une administration publique : l'INSEE
 %%%
 
 <!-- .slide: data-background-image="images/treasure-map.svg" data-background-size="600px" class="slide" -->
@@ -13,6 +15,14 @@ L'open source consiste à l'ouverture du code pour une exposition externe. Les e
 
 Cela est entré dans la loi pour le devenir des applications et données administratives : <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033202746/" target="_blank">Loi pour une république numérique (2016)</a>
 
+Note:
+3 grands axes de travail:
+
+Environnements : travail sur les livrables et la modularité des applicatifs
+<br/>
+Suppression de la donnée / création d'un environnement de test
+<br/>
+Documentation pour la contribution
 %%%
 
 <!-- .slide: data-background-image="images/treasure-map.svg" data-background-size="600px" class="slide" -->
@@ -55,3 +65,11 @@ Cela s'inscrit donc sur plusieurs projets pour l'ouverture du code :
 - Documentation détaillée, en anglais pour construire un environnement de travail
 - Code source également instruit en langue anglaise (dont les classes métier)
 - Internationalisation des interfaces (i18n)
+
+Note:
+En fait, on ne sait jamais ce qu'il y au sein des caches et volumes des serveurs cloud où seront hébergé le code à l'avenir. Et donc, il faut considérer qu'il n'y a pas de moyen de résoudre un problème de sécurité sur le dépôt de code à posteriori
+
+Git: 
+La puissance des outils de versionning comme Git permet d'accéder a l'intégralité de l'historique d'un dépôt projet 
+
+Il est donc nécessaire de s'assurer qu'il n'y a ni données sensibles, ni mot de passes dans chacune des versions du code source du projet avant de le sortir afin d'éviter tout risque

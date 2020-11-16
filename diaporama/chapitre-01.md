@@ -1,9 +1,6 @@
 <!-- .slide: data-background-image="images/literature.svg" data-background-size="750px" class="chapter" -->
 
 ## Open source : concepts
-Note:
-Bonjour,
-Abdou Diaw et moi même, au SNDIO.
 %%%
 
 <!-- .slide: data-background-image="images/literature.svg" data-background-size="600px" class="slide" -->
