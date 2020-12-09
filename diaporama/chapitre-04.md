@@ -69,7 +69,7 @@ Il y a un réel besoin de développeur de ce côté.
 Dans le cas de Nautile, il a été question de modulariser la partie web service rundeck de l'application, qui est adhérente a un projet interne, le Service de Soumission des Tâches.
 <a href="https://maven.apache.org/guides/introduction/introduction-to-the-pom.html" target="_blank">
 
-<img src="https://miro.medium.com/max/361/1*ofAgWwHK0rEkAtOkp_EZ2w.png">
+<img src="https://miro.medium.com/max/361/1*ofAgWwHK0rEkAtOkp_EZ2w.png" style="display:block;margin-left:auto;margin-right:auto;">
 
 </a>
 
@@ -82,17 +82,13 @@ Illustration niveau maven
 %%%
 <!-- .slide: data-background-image="images/nautilus.svg" data-background-size="600px" class="slide" -->
 ### Modules INSEE et injection de dépendances (Spring boot)
-Spring permet de définir un contexte initialisé au lancement de l'application, pour ensuite injecter a chaque besoin, le composant déjà instancié.  <br />On injecte ensuite un composant implémentant l'interface quand on en a besoin.
+Spring permet de définir un contexte initialisé au lancement de l'application, pour ensuite injecter a chaque besoin, le composant déjà instancié.  
 <a href="https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/autoconfigure/condition/ConditionalOnProperty.html" target="_blank">
 
-<img src="https://www.baeldung.com/wp-content/uploads/2017/06/Spring-Bean-Life-Cycle.jpg">
+<img src="https://blog.ona.io/assets/images/2019-04-23/koindi.png" style="display:block;margin-left:auto;margin-right:auto;width:70%"}}>
 </a>
 
-```java
-private BatchClient batchClient;
-@Autowired
-public void setBatchClient(BatchClient batchClient){
-```
+On injecte ensuite un composant implémentant l'interface quand on en a besoin.
 
 
 Note:
