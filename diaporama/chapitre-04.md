@@ -68,15 +68,9 @@ Il y a un réel besoin de développeur de ce côté.
 
 Dans le cas de Nautile, il a été question de modulariser la partie web service rundeck de l'application, qui est adhérente a un projet interne, le Service de Soumission des Tâches.
 <a href="https://maven.apache.org/guides/introduction/introduction-to-the-pom.html" target="_blank">
-```xml:
-<dependency>
-                <groupId>fr.insee</groupId>
-                <artifactId>nautile-client</artifactId>
-                <version>${project.parent.version}</version>
-                <type>jar</type>
-                <scope>provided</scope>
-</dependency>
-```
+
+<img src="https://miro.medium.com/max/361/1*ofAgWwHK0rEkAtOkp_EZ2w.png">
+
 </a>
 
 Sortie de la partie adhérente du code dans un module a part: <br/>
@@ -88,19 +82,11 @@ Illustration niveau maven
 %%%
 <!-- .slide: data-background-image="images/nautilus.svg" data-background-size="600px" class="slide" -->
 ### Modules INSEE et injection de dépendances (Spring boot)
-Spring permet de définir un contexte initialisé au lancement de l'application, pour ensuite injecter a chaque besoin, le composant déjà instancié.
+Spring permet de définir un contexte initialisé au lancement de l'application, pour ensuite injecter a chaque besoin, le composant déjà instancié.  <br />On injecte ensuite un composant implémentant l'interface quand on en a besoin.
 <a href="https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/autoconfigure/condition/ConditionalOnProperty.html" target="_blank">
 
-```java
-@Component
-@ConditionalOnProperty(value = "basic-client.enabled",havingValue = "false")
-@Primary
-public class SstBatchClient implements BatchClient {
-``` 
+<img src="https://www.baeldung.com/wp-content/uploads/2017/06/Spring-Bean-Life-Cycle.jpg">
 </a>
-
-On injecte ensuite un composant implémentant l'interface quand on en a besoin.
-<a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html" target="_blank">
 
 ```java
 private BatchClient batchClient;
@@ -108,7 +94,6 @@ private BatchClient batchClient;
 public void setBatchClient(BatchClient batchClient){
 ```
 
-</a>
 
 Note:
 Illustration spring boot : inversion de contrôle
@@ -119,7 +104,7 @@ Illustration spring boot : inversion de contrôle
 
 Nautile est une application adhérente a un lot de données millésimées, la base FIDELI. <br/>
 
-Intégration d'un outil de versionning de base de données dans le code source
+Intégration d'un outil de gestion de version de base de données dans le code source
 
 <table>
             <tr>
@@ -140,7 +125,7 @@ Intégration d'un outil de versionning de base de données dans le code source
 Note:
 Afin d'abstraire la version de l'application et la version des données, il a été décidé de gérer un modèle dynamique 
 et de versionner dans le code source, la base de données. Ainsi peut importe l'environnement, la base étant adhérente au code.
-Ainsi cela réduit la place de l'environnement dans le déploiement, la partie versionning de base n'étant plus adhérente a l'environnement lui même. 
+Ainsi cela réduit la place de l'environnement dans le déploiement, la partie gestion de version de base n'étant plus adhérente a l'environnement lui même. 
 => Montées de versions assurées.
 %%%
 

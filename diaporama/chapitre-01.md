@@ -61,7 +61,7 @@ Quels sont les risques qui interviennent avec l'ouverture d'un code source ?
 
 Une documentation de l'application propre 
 
-Un fonctionnement propre, pour le versionning et la contribution : le <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow" target=_blank>Gitflow</a> et les pull requests.
+Un fonctionnement propre, pour la gestion de version et la contribution : le <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow" target=_blank>Gitflow</a> et les pull requests.
 
 Un fichier d'explication pour la contribution, le <a href="https://gist.github.com/PurpleBooth/b24679402957c63ec426#file-good-contributing-md-template-md" target=_blank>CONTRIBUTING.md</a>
 

@@ -52,14 +52,14 @@ Exposition des données à des serveurs externes, risques pour la structure.
 ### Avantages internes au produit
 
 - Contribution externes au projet interne<!-- .element: class="fragment" -->
-- Projet plus accessible et donc plus prône aux erreurs <!-- .element: class="fragment" -->
+- Projet plus accessible et donc plus fiable <!-- .element: class="fragment" -->
 - Réutilisation du code interne dans d'autres projets, découpage en sous projets<!-- .element: class="fragment" -->
 
 Note:
 Contribution externes au projet interne:
 - Gain de contributeurs, image de l'entreprise
 
-Projet plus accessible et donc plus prône aux erreurs :
+Projet plus accessible et donc plus résistant aux erreurs :
 - plus de visibilité = plus de déclaration de bugs métiers et techniques
 
 Réutilisation du code interne dans d'autres projets, découpage en sous projets : 

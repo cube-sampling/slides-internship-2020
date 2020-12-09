@@ -44,8 +44,8 @@ Cela peut s'avérer compliqué dans le cas de projet legacy stateful.  => Car ad
 %%%
 <!-- .slide: data-background-image="images/treasure-map.svg" data-background-size="600px" class="slide" -->
 ### Suppression des données sensibles
-Par définition, le versionning est l'établissement de versions correspondant aux étapes de développement d'un projet.<br/>
-- Le versionning implique donc que l'on peut accéder à d'anciennes versions du projet<!-- .element: class="fragment" -->
+Par définition, la gestion de version  est l'établissement de versions correspondant aux étapes de développement d'un projet.<br/>
+- Le gestion de version implique donc que l'on peut accéder à d'anciennes versions du projet<!-- .element: class="fragment" -->
 - Il faut donc se méfier des anciennes versions du projet et en clarifier l'historique<!-- .element: class="fragment" -->
 
 
@@ -60,7 +60,7 @@ Il est donc nécessaire de s'assurer qu'il n'y a ni données sensibles, ni mot d
 
 <!-- .slide: data-background-image="images/treasure-map.svg" data-background-size="600px" class="slide" -->
 ### Documentation
-La langue par défaut dans le monde open source est l'anglais, le code source doit donc être documenté en anglais. <br/>
+La langue par défaut dans le monde open source est l'anglais, le code source doit donc être documenté, par défaut, en anglais. <br/>
 Cela s'inscrit donc sur plusieurs projets pour l'ouverture du code :
 - Documentation détaillée, en anglais pour construire un environnement de travail
 - Code source également instruit en langue anglaise (dont les classes métier)

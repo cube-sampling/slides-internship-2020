@@ -10,7 +10,7 @@ Enfin nous allons étudier un cas plus particulier de nouveau projet pour le sta
 ### Description du besoin
 
 Pour l'élaboration d'échantillon d'unités primaires, 
-l'INSEE nécessite, afin d'améliorer la précision des estimateurs d'Horvitz Thompson des totaux, l'utilisation d'une méthode de tirage équilibrée.
+l'INSEE a besoin d'une méthode de tirage équilibrée afin d'améliorer la précision des estimateurs d'Horvitz Thompson des totaux. 
 
 Note:
 Pour l'élaboration d'échantillon d'unités primaires pour le tirage de premier degré , dans le cadre de plan de sondages spécifiques à certaines enquêtes ménages, <br/>
