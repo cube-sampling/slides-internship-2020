@@ -8,8 +8,8 @@
 <h3><a href="https://opensource.org/osd" style=color:inherit target=_blank> Définition</a></h3>
 
 Est dit open source un logiciel :
-- à libre redistribution <!-- .element: class="fragment" -->
 - avec un code source accessible <!-- .element: class="fragment" -->
+- à libre redistribution <!-- .element: class="fragment" -->
 - possédant une définition du devenir du code partagé <!-- .element: class="fragment" -->
 
 
@@ -35,12 +35,15 @@ Il est donc nécessaire de définir un tel contrat pour une application. <br/>
 Il se trouve de manière classique dans un projet dans le fichier <a href="https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository" target=_blank>LICENSE</a>
 
 On retrouve ici différents concepts: 
-- rapport projet parent/fils <!-- .element: class="fragment" -->
-- quel partage pour le code ?  <!-- .element: class="fragment" -->
+- termes de modification et exploitabilité <!-- .element: class="fragment" -->
+- définition de restrictions parent/fils   <!-- .element: class="fragment" -->
 Note:
 
-Rapport projet parent/fils
-- La question est de savoir quels sont les conditions du fils d'un projet opensource, doit il être opensource ? Peut il être commercialisable ? La license doit elle être la même pour celui ci ? 
+Termes modification exploitabilité : 
+Définition des droits a la modification qui font de cette license une license opensource. Permettant du coup aux utilisateurs de modifier le code pour une utilisation personnalisée.
+
+Restriction : 
+Redistribution seulement selon la même license, copyleft, respect de l'origine du produit.
 
 Le code est il accessible a tous, peut on créer des solutions basées sur ce code et les revendre ? 
 Par défaut il est sous license copyright, interdit d'accès et d'utilisation.
