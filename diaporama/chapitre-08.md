@@ -1,4 +1,4 @@
-## Rapport de stage
+## Rapport de stage et présentation vidéo
 
 <table>
     <tr>
@@ -10,6 +10,14 @@
       />
         </a>
       </td>
+                    <td>
+                <a href="static/presentation-11-12-2020.mp4">
+                  <img
+                    src="images/movie.jpg"
+                    style="width: 100px"
+                  />
+                </a>
+</td>
 </tr>
 </table>
 
