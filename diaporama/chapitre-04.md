@@ -16,7 +16,7 @@ Note:
 
 Problématiques de sortie de code sur un cloud externe privé, sans poste interne fourni aux prestataires.
 
- Pas de poste de télétravail, travail en demi journées..
+ Pas de poste de télétravail, direct access en demi journées
 %%%
 
 
