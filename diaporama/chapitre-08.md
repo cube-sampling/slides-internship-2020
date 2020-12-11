@@ -26,4 +26,4 @@
 
 
 Note:
-Lien vers le rapport de stage
+Lien vers le rapport de stage et video
