@@ -2,6 +2,9 @@
 
 ## Application au projet Nautile
 
+Note:
+
+C'est le projet sur lequel je suis RIA, et sur lequel j'ai pu travailler pendant une grande partie de mon stage
 %%%
 
 <!-- .slide: data-background-image="images/nautilus.svg" data-background-size="600px" class="slide" -->
@@ -9,6 +12,11 @@
 L'application NAUTILE est une application de tirage d'échantillons pour les enquêtes ménages.
 L'enjeu ici était l'ouverture du code pour la réalisation d'un batch en externe dans le cadre d'une prestation
 
+Note:
+
+Problématiques de sortie de code sur un cloud externe privé, sans poste interne fourni aux prestataires.
+
+ Pas de poste de télétravail, travail en demi journées..
 %%%
 
 
@@ -79,6 +87,21 @@ nautile-client, disponible dans l'environnement cible par le scope provided
 
 Note:
 Illustration niveau maven
+
+Utilisation du concept de dépendance provided, dépendance optionnelle
+
+```xml:
+<dependency>
+                <groupId>fr.insee</groupId>
+                <artifactId>nautile-client</artifactId>
+                <version>${project.parent.version}</version>
+                <type>jar</type>
+                <scope>provided</scope>
+</dependency>
+```
+
+En savoir plus : https://medium.com/@danismaz.furkan/difference-between-optional-true-optional-and-scope-provided-scope-7404ec24fb59
+
 %%%
 <!-- .slide: data-background-image="images/nautilus.svg" data-background-size="600px" class="slide" -->
 ### Modules INSEE et injection de dépendances (Spring boot)
@@ -93,6 +116,30 @@ On injecte ensuite un composant implémentant l'interface quand on en a besoin.
 
 Note:
 Illustration spring boot : inversion de contrôle
+
+<a href="https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/autoconfigure/condition/ConditionalOnProperty.html" target="_blank">
+
+```java
+@Component
+@ConditionalOnProperty(value = "basic-client.enabled"
+,havingValue = "false")
+@Primary
+public class SstBatchClient implements BatchClient {
+``` 
+</a>
+
+On injecte ensuite un composant implémentant l'interface quand on en a besoin.
+<a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html" target="_blank">
+
+```java
+private BatchClient batchClient;
+@Autowired
+public void setBatchClient(BatchClient batchClient){
+```
+
+</a>
+
+En savoir plus : [(spring dependency injection)](https://medium.com/@mohamed.elhamra/spring-dependency-injection-d4676390d314)
 %%%
 
 <!-- .slide: data-background-image="images/nautilus.svg" data-background-size="600px" class="slide" -->

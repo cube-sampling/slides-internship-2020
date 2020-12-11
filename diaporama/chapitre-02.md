@@ -15,14 +15,17 @@ Etude des risques et des avantages du passage a l'open source
 - Problématiques de gestion de version (ex: Git Ransomware Attack)<!-- .element: class="fragment" -->
 
 Note:
+
 Code exposé : 
+
 - injection sql et accès aux informations sur les dépendances (failles de sécurité)
-<br/>
+
 Adhérences fortes: 
 - mots de passes et liens. Problématiques de gestion de version.
-<br/>
+
 Gestion de version : 
 - Reverse engineering du code source
+
 voir https://medium.com/swlh/hacking-git-directories-e0e60fa79a36
 %%%
 
@@ -36,14 +39,27 @@ voir https://medium.com/swlh/hacking-git-directories-e0e60fa79a36
 - Problématiques juridiques : droit des données<!-- .element: class="fragment" -->
 
 Note:
+Démystification du travail :
+
+Risque "médiatique" en cas de bug, gestion de crises, secret statistique.
+<br />
 Problématiques compétences développeur: 
+
 Le travail OS n'est pas généralisé a l'insee, il faut donc envisager la conduite du changement de ce niveau là puisse qu'il y a tout une gestion de projet associée, des risques à connaître.  
+
 <br/>
-Problématique contribution fonction publique : 
-La fonction publique utilise beaucoup de solutions open source, mais assure un suivi dans sa gestion des ressources du parc des développeurs. De ce fait, la contribution opensource est imputée à des organismes internes en quête de ressource et donc, elle n'est par nature pas encouragée par les responsables hiérarchiques métiers.
-<br/>
-- Problématiques juridiques : droit des données
+Problématiques juridiques : 
+
+droit des données
 Exposition des données à des serveurs externes, risques pour la structure.
+
+<br/>
+
+Bonus : Problématique contribution admin publique 
+
+La fonction publique utilise beaucoup de solutions open source, mais assure un suivi dans sa gestion des ressources du parc des développeurs. De ce fait, la contribution opensource est imputée à des organismes internes, il faut donc s'assurer de la dimension rh du travail et intégrer les MOA a la dynamique OS.
+
+
 %%%
 
 
@@ -56,13 +72,16 @@ Exposition des données à des serveurs externes, risques pour la structure.
 - Réutilisation du code interne dans d'autres projets, découpage en sous projets<!-- .element: class="fragment" -->
 
 Note:
-Contribution externes au projet interne:
+Contribution externes au projet interne
+
 - Gain de contributeurs, image de l'entreprise
 
-Projet plus accessible et donc plus résistant aux erreurs :
+Projet plus accessible et donc plus résistant aux erreurs 
+
 - plus de visibilité = plus de déclaration de bugs métiers et techniques
 
 Réutilisation du code interne dans d'autres projets, découpage en sous projets : 
+
 - Construction en microservice, adhérence actuelle aux données métier, schéma dynamique
 - Découpage application en partie tirage, définition, vtl ... Réutilisabilité
 

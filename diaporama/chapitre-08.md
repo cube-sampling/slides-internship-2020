@@ -1,4 +1,4 @@
-## Liens 
+## Rapport de stage
 
 <table>
     <tr>
@@ -18,4 +18,4 @@
 
 
 Note:
-Lien vers le rapport de stage, le groupe github
+Lien vers le rapport de stage

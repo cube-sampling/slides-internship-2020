@@ -3,6 +3,9 @@
 ## Application à un service de tirage
 Note:
 Enfin nous allons étudier un cas plus particulier de nouveau projet pour le stage, cela illustre les problématiques d'utilisation et de conception d'application comme ressource open source.
+
+C'est le projet un projet spécifique au stage, et sur lequel j'ai pu travailler à la fin de mon stage.
+
 %%%
 
 <!-- .slide: data-background-image="images/cube.svg" data-background-size="500px" class="slide" -->

@@ -1,8 +1,11 @@
 <!-- .slide: data-background-image="images/literature.svg" data-background-size="750px" class="chapter" -->
 
 ## Open source : concepts
-%%%
 
+Note: 
+
+Cette partie regroupe donc les concepts ainsi que différents cas d'usage.
+%%%
 <!-- .slide: data-background-image="images/literature.svg" data-background-size="600px" class="slide" -->
 
 <h3><a href="https://opensource.org/osd" style=color:inherit target=_blank> Définition</a></h3>
@@ -70,7 +73,15 @@ Un fichier d'explication pour la contribution, le <a href="https://gist.github.c
 
 
 Note:
+Documentation propre:
+La documentation sera détaillée par la suite, mais au global il faut donc donner envie de contribuer et détailler les enjeux : 
+
+Super vidéo sur le sujet :  https://www.youtube.com/watch?v=y2GNVGagWdM
+
 Gitflow: 
-Le versionning actuel est majoritairement effectué sous Git, un gestionnaire de version libre et très maintenu. De ce versionning différents usages ont émergé et parmi ceux ci, le gitflow avec l'introduction des pull requests. Le principe d'une pull request est de pouvoir contribuer en récupérant un dépot de code (fork) et en effectuant les développements dessus pour pouvoir proposer une fonctionnalité ou une correction de bug.
+Le versionning actuel est majoritairement effectué sous Git, un gestionnaire de version libre et très maintenu. De ce versionning différents usages ont émergé et parmi ceux ci, le gitflow avec l'introduction des pull requests. 
+
+Le principe d'une pull request est de pouvoir contribuer en récupérant un dépot de code (fork) et en effectuant les développements dessus pour pouvoir proposer une fonctionnalité ou une correction de bug, ou simplement exploiter une version dégradée de la dépendance avec nos ajouts.
+
 Contributing:
 Fichier précise comment contribuer, quel formattage appliquer, qui contacter, quels sont les développeurs internes au projet qui est très souvent intégré aux projets opensource gratuits, permettant un accès simplifié des utilisateurs externes
